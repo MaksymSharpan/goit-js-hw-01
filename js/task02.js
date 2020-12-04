@@ -3,9 +3,13 @@ const ordered = 50;
   
 
 
-console.log(ordered > total);
-console.log("На складе недостаточно товаров!");
+// console.log(ordered > total);
+// console.log("На складе недостаточно товаров!");
 
 
-console.log(ordered < total);
-console.log("Заказ оформлен, с вами свяжется менеджер");
+// console.log(ordered < total);
+// console.log("Заказ оформлен, с вами свяжется менеджер");
+
+const isInRange = ordered > total;
+console.log("На складе недостаточно товаров!", isInRange)
+
