@@ -1,2 +1,4 @@
-let input;
-let total = 0;
+let input = prompt('Введите число:')
+let total = input
+
+console.log (total)
