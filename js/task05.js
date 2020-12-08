@@ -1,21 +1,43 @@
-// const country1 = "Китай";
-// const country2 = "Чили"
-// const country3 = "Австралия"
-// const country4 = "Индия"
-// const country5 = "Ямайка"
+// country1 = "Китай";
+// country2 = "Чили"
+// country3 = "Австралия"
+// country4 = "Индия"
+// country5 = "Ямайка"
 
-// const price1 = 100;
-// const price2 = 250;
-// const price3 = 170;
-// const price4 = 80;
-// const price5 = 120;
+// price1 = 100;
+// price2 = 250;
+// price3 = 170;
+// price4 = 80;
+// price5 = 120;
 
-// const userInput = prompt('Введите Вашу страну:');
-// console.log('userinput before:', userInput);
+let country = prompt('Укажите вашу страну:');
+let price = '';
+country = country.toLowerCase();
 
+switch (country) {
+  case 'китай':
+    price = '100';
+    break;
+  
+  case 'чили':
+    price = '250';
+    break;
+  
+  case 'австралия':
+    price = '170';
+    break;
+  
+  case 'индия':
+    price = '80';
+    break;
+  
+  case 'ямайка':
+    price = '120';
+    break;
+  
+  default:
+    alert('В вашей стране доставка не доступна');
+    break;
+}
 
-// const normalizedInput = userInput.toLowerCase();
-// console.log('userinput after: ', userInput);
-
-// console.log(country1 === userInput);
-
+console.log (`Доставка в ${country} будет стоить ${price} кредитов`)
